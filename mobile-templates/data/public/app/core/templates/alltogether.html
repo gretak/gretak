@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Template 3</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="/mobile-templates/assets/app/core/css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/mobile-templates/assets/app/core/css/slick/slick-theme.css"/>
+    <link media="screen" href="/mobile-templates/assets/app/core/css/template1.css" type="text/css" rel="stylesheet" />
+    <link media="screen" href="/mobile-templates/assets/app/core/css/template2.css" type="text/css" rel="stylesheet" />
+    <link media="screen" href="/mobile-templates/assets/app/core/css/template3.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body> 
+<div class="main3 bgr-color3 portfolio">
+        <div class="container3">
+            <div class="container-inner3">
+                <div id="space3"></div>
+                <div class="swipe-container">
+
+                    <div class="swipe-element">
+                        <div id="text-h13">
+                            <h1 id="fittext3-h1-1">What's new in the app?</h1>
+                        </div>
+                        <div id="main-image3">
+                            <img class="main-image3" src="/mobile-templates/assets/app/core/img/template3/mobile1.jpg" alt="main image alt" />
+                        </div>
+                        <div id="text-p3">
+                            <p id="fittext3-p-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swipe-element">
+                        <div id="text-h13">
+                            <h1 id="fittext3-h1-2">What's new in the app?</h1>
+                        </div>
+                        <div id="main-image3">
+                            <img class="main-image3" src="/mobile-templates/assets/app/core/img/template3/mobile2.png" alt="main image alt" />
+                        </div>
+                        <div id="text-p3">
+                            <p id="fittext3-p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="height:7%"> </div>
+                <div id="footer3">
+                    <img class="footer3" src="/mobile-templates/assets/app/core/img/template3/footer-image.png" alt="tesco-footer" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main1 bgr-color1 portfolio">
+        <div class="container1">
+            <div class="container-inner1">
+                <div id="space1"></div>
+                <div id="text-h11">
+                    <h1 id="fittext1-h1">What's new in the app?</h1>
+                </div>
+                <div id="main-image1">
+                    <img class="main-image1" src="/mobile-templates/assets/app/core/img/template1/mobile1.jpg" alt="main image alt" />
+                </div>
+                <div id="text-p1">
+                    <p id="fittext1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div id="footer1">
+                    <img class="footer1" src="/mobile-templates/assets/app/core/img/template1/footer-image.png" alt="tesco-footer" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main2 bgr-color2 portfolio">
+        <div class="container2">
+            <div class="container-inner2">
+                <div id="space2"></div>
+                <div id="text-h12">
+                    <h1 id="fittext2-h1">What's new in the app?</h1>
+                </div>
+                <div id="main-image2">
+                    <img class="main-image2" src="/mobile-templates/assets/app/core/img/template2/mobile1.jpg" alt="main image alt" />
+                </div>
+                <div id="text-p2">
+                    <p id="fittext2-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                    <a href="http://gretakava.6te.net" class="decoration-none2">
+                        <div id="button2">
+                            <p style="color: white;">Click here<p>
+                            </div>
+                        </a>
+                        <div id="footer2">
+                            <img class="footer2" src="/mobile-templates/assets/app/core/img/template2/footer-image.png" alt="tesco-footer" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="/mobile-templates/assets/app/core/js/jquery.min.js"></script>
+            <script src="/mobile-templates/assets/app/core/js/fittext.js"></script>
+            <script type="text/javascript" src="/mobile-templates/assets/app/core/js/slick/slick.min.js">
+            </script>
+
+            <script>
+                $(document).ready(function()
+                {
+                    $('.swipe-container').on('setPosition', function(slick){
+                        fitText(document.getElementById('fittext3-p-1'), 1.8);
+                        fitText(document.getElementById('fittext3-p-2'), 1.8);
+                        fitText(document.getElementById('fittext3-h1-1'), 1.0);
+                        fitText(document.getElementById('fittext3-h1-2'), 1.0);
+
+                        fitText(document.getElementById('fittext1-h1'), 1.0);
+                        fitText(document.getElementById('fittext1-p'), 1.8);
+
+                        fitText(document.getElementById('fittext2-p'), 1.9);
+                        fitText(document.getElementById('fittext2-h1'), 1.0);
+                        fitText(document.getElementById('button2'), 1.9);
+                    });
+
+                    $('.swipe-container').slick({
+                        dots: true,
+                        arrows: false,
+                        swipeToSlide: true,
+                        infinite: false,
+                        speed: 200
+                    });
+                });
+            </script>
+
+        </body>
+        </html>
